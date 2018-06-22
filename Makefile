@@ -1,7 +1,7 @@
-NAME=Grace
+NAME=Sully
 
-files= Colleen.s
+# files= Colleen.s
 
 all: 
-	nasm -f elf64 asm/Grace.s
-	gcc asm/Grace.o -o $(NAME)
+	nasm -f elf64 asm/Sully.s
+	gcc asm/Sully.o -o $(NAME)
