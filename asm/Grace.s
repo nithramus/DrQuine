@@ -8,10 +8,10 @@ swag db `"%%define yolo 2", 10, "%%define yolo2 3", 10, "%%define yolo3 4", 10, 
 file db "Grace_kid.s", 0
 mode db "w+"
 section .text
-global main
+global _start
 extern fprintf
 extern fopen
-main:
+_start:
 push rbp
 mov rbp, rsp
 mov rdi, file
