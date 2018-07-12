@@ -5,28 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: nithramir <nithramir@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/06/27 16:43:59 by bandre            #+#    #+#              #
-#    Updated: 2018/07/13 01:23:26 by nithramir        ###   ########.fr        #
+#    Created: 2018/07/13 01:26:02 by nithramir         #+#    #+#              #
+#    Updated: 2018/07/13 01:33:06 by nithramir        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
 all:
-	nasm -f elf64 Colleen.s
-	gcc Colleen.o -o Colleen
-	nasm -f elf64 Grace.s
-	gcc Grace.o -o Grace
-	nasm -f elf64 Sully.s
-	gcc Sully.o -o Sully
-
-fclean: clean
-	rm -f Colleen
-	rm -f Grace
-	rm -f Sully
+	echo "nothing to do to build js files"
 
 clean:
-	rm -f Colleen.o
-	rm -f Grace.o
-	rm -f Grace_kid.s
+	rm -f Grace_kid.js
 	rm -f Sully_*
-	rm -f Sully.o
