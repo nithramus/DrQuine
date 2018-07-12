@@ -8,21 +8,21 @@ swag db `"%%define yolo1 2", 10, "%%define yolo2 3", 10, "%%define yolo3 4", 10,
 file db "Grace_kid.s", 0
 mode db "w+"
 section .text
-global _main
-extern _fprintf
-extern _fopen
-_main:
+global main
+extern fprintf
+extern fopen
+main:
 push rbp
 mov rbp, rsp
 mov rdi, file
 mov rsi, mode
-call _fopen
+call fopen
 mov r9, 96
 mov r8, swag
 mov rcx, 96
 mov rdx, swag
 mov rsi, yolo
 mov rdi, rax
-call _fprintf
+call fprintf
 pop rbp
 ret

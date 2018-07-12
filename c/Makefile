@@ -5,19 +5,21 @@
 #                                                     +:+ +:+         +:+      #
 #    By: nithramir <nithramir@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/06/27 16:43:59 by bandre            #+#    #+#              #
-#    Updated: 2018/07/12 22:36:46 by nithramir        ###   ########.fr        #
+#    Created: 2018/07/12 22:04:46 by nithramir         #+#    #+#              #
+#    Updated: 2018/07/12 22:25:20 by nithramir        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
 all:
-	nasm -f elf64 Colleen.s
-	gcc Colleen.o -o Colleen
-	nasm -f elf64 Grace.s
-	gcc Grace.o -o Grace
-fclean:
-	rm -f Colleen
+	gcc Colleen.c -o Colleen
+	gcc Grace.c -o Grace
+	gcc Sully.c -o Sully
 
 clean:
-	rm -f Colleen.o
+	rm -f Grace_kid.c
+	rm -f Sully_*
+
+fclean: clean
+	rm -f Colleen
+	rm -f Grace
+	rm -f Sully
