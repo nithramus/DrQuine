@@ -4,5 +4,5 @@
 {
    /*coucou*/
    console.log("/*yolo*/\n", "function foo(){}\n", main.toString(), "\nmain()");
-}
+} 
 main()
