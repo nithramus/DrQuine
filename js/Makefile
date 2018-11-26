@@ -6,7 +6,7 @@
 #    By: bandre <bandre@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/13 01:26:02 by nithramir         #+#    #+#              #
-#    Updated: 2018/11/22 16:58:18 by bandre           ###   ########.fr        #
+#    Updated: 2018/11/26 22:26:57 by bandre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,5 @@ fclean: clean
 
 clean:
 	rm -f Grace_kid.js
-	rm -f Sully_*
 
 re: fclean

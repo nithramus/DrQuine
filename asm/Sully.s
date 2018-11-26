@@ -19,6 +19,7 @@ mov rbp, rsp
 push rdi
 sub rsp, 5000
 mov r15, filenumber
+sub r15, 1
 cmp r15, -1
 je .end
 mov rdi, rsp
@@ -42,8 +43,8 @@ pop r14
 pop rdi
 call _fclose
 mov rdi, rsp
-mov rdx, r15
 lea rsi, [rel compile]
+mov rdx, r15
 mov rcx, r15
 mov r8, r15
 mov r9, r15
