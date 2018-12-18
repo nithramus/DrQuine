@@ -1,7 +1,7 @@
 function yolo()
 {
     const { exec } = require('child_process');
-    var i = 5;
+    var i = 1;
     var path = require('path');
     var programName = path.basename(__filename);
     if (i == 0)
